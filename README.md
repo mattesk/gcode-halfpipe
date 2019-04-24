@@ -1,7 +1,7 @@
 
 
-CREATE G-CODE TO MILL A HALFPIPE WITH A BALL ENDMILL
-====================================================
+create G-CODE to mill a  HALFPIPE with a BALL ENDMILL
+=====================================================
 
 Using FreeCAD now for a ~year or so and it happen to be quite an interesting learning curve for me.
 Lately I started using the Path workbench module to feed my 'homebrew' cnc machine. 
@@ -22,9 +22,14 @@ Not giving up I finally came up with the idea to create my own gcode. The math i
 Using a round endmill it is pretty much up to defining the cut radius, calc the coordinates for the position and then running the endmill back and forth. 
 So I created a small c program to calculate the needed coordinates.
 
+Here an example to create g-code for a halfpipe with 
+
+ - 32.0mm diameter and a 12.5mm ball endmill 
+ - to mill 4mm deep 
+ - starting at x=0 , y=80mm with a length of 30mm
 
 
-    $ halfpipe -b 12.5 -l 30 -x 0 -y 80 -z 4
+    $ halfpipe -b 12.5 -d 32 -l 30 -x 0 -y 80 -z 4
     (--- halfpipe D=32.00 L=30.00 zcut=4.00 center x/y/z= 0.00 80.00 12.00 hpR=16.00 bemR=6.25 cutR=9.75 )
     G0 Z10.000
     G0 X0.000 Y86.894
