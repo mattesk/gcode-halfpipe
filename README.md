@@ -23,10 +23,9 @@ Using a round endmill it is pretty much up to defining the cut radius, calc the 
 So I created a small c program to calculate the needed coordinates.
 
 Here an example to create g-code for a halfpipe with 
-
- - 32.0mm diameter and a 12.5mm ball endmill 
- - to mill 4mm deep 
- - starting at x=0 , y=80mm with a length of 30mm
+- 32.0mm diameter and a 12.5mm ball endmill 
+- to mill 4mm deep 
+- starting at x=0 , y=80mm with a length of 30mm
 
 
     $ halfpipe -b 12.5 -d 32 -l 30 -x 0 -y 80 -z 4
