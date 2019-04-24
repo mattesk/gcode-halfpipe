@@ -1,0 +1,91 @@
+(Exported by FreeCAD)
+(Post Processor: linuxcnc_post)
+(Output Time:2019-04-16 12:43:45.154409)
+(begin preamble)
+G17 G54 G40 G49 G80 G90
+G21
+(begin operation: T2: 475eMill)
+(machine: not set, mm/min)
+(T2: 475eMill)
+M6 T2
+M3 S1600
+(finish operation: T2: 475eMill)
+(begin operation: Custom)
+(machine: not set, mm/min)
+( --- halfpipe center x/y/z= 0.00 0.16 12.00  hpR=16.00  bemR=6.25  cutR=9.75 )
+(--- halfpipe D=32.00 L=26.00 zcut=4.00  center x/y/z= 0.00 -16.00 12.00  hpR=16.00  bemR=6.25  cutR=9.75 )
+G0 Z10.000
+G0 X0.000 Y-8.531
+G0 Z5.000
+(halfpipe path 50 degrees: ysin/zcos=0.766/0.643  hpcoff_yz= 7.47 6.27  bemx/y/z= 0.00 -8.53 -0.52)
+G1 X0.000 Y-8.531 Z-0.517 F50.000
+G1 X26.000 Y-8.531 Z-0.517 F200.000
+G1 X26.000 Y-23.469 Z-0.517 F200.000
+G1 X0.000 Y-23.469 Z-0.517 F200.000
+G1 X0.000 Y-8.531 Z-0.517 F200.000
+(halfpipe path 45 degrees: ysin/zcos=0.707/0.707  hpcoff_yz= 6.89 6.89  bemx/y/z= 0.00 -9.11 -1.14)
+G1 X0.000 Y-9.106 Z-1.144 F50.000
+G1 X26.000 Y-9.106 Z-1.144 F200.000
+G1 X26.000 Y-22.894 Z-1.144 F200.000
+G1 X0.000 Y-22.894 Z-1.144 F200.000
+G1 X0.000 Y-9.106 Z-1.144 F200.000
+(halfpipe path 40 degrees: ysin/zcos=0.643/0.766  hpcoff_yz= 6.27 7.47  bemx/y/z= 0.00 -9.73 -1.72)
+G1 X0.000 Y-9.733 Z-1.719 F50.000
+G1 X26.000 Y-9.733 Z-1.719 F200.000
+G1 X26.000 Y-22.267 Z-1.719 F200.000
+G1 X0.000 Y-22.267 Z-1.719 F200.000
+G1 X0.000 Y-9.733 Z-1.719 F200.000
+(halfpipe path 35 degrees: ysin/zcos=0.574/0.819  hpcoff_yz= 5.59 7.99  bemx/y/z= 0.00 -10.41 -2.24)
+G1 X0.000 Y-10.408 Z-2.237 F50.000
+G1 X26.000 Y-10.408 Z-2.237 F200.000
+G1 X26.000 Y-21.592 Z-2.237 F200.000
+G1 X0.000 Y-21.592 Z-2.237 F200.000
+G1 X0.000 Y-10.408 Z-2.237 F200.000
+(halfpipe path 30 degrees: ysin/zcos=0.500/0.866  hpcoff_yz= 4.87 8.44  bemx/y/z= 0.00 -11.12 -2.69)
+G1 X0.000 Y-11.125 Z-2.694 F50.000
+G1 X26.000 Y-11.125 Z-2.694 F200.000
+G1 X26.000 Y-20.875 Z-2.694 F200.000
+G1 X0.000 Y-20.875 Z-2.694 F200.000
+G1 X0.000 Y-11.125 Z-2.694 F200.000
+(halfpipe path 25 degrees: ysin/zcos=0.423/0.906  hpcoff_yz= 4.12 8.84  bemx/y/z= 0.00 -11.88 -3.09)
+G1 X0.000 Y-11.879 Z-3.087 F50.000
+G1 X26.000 Y-11.879 Z-3.087 F200.000
+G1 X26.000 Y-20.121 Z-3.087 F200.000
+G1 X0.000 Y-20.121 Z-3.087 F200.000
+G1 X0.000 Y-11.879 Z-3.087 F200.000
+(halfpipe path 20 degrees: ysin/zcos=0.342/0.940  hpcoff_yz= 3.33 9.16  bemx/y/z= 0.00 -12.67 -3.41)
+G1 X0.000 Y-12.665 Z-3.412 F50.000
+G1 X26.000 Y-12.665 Z-3.412 F200.000
+G1 X26.000 Y-19.335 Z-3.412 F200.000
+G1 X0.000 Y-19.335 Z-3.412 F200.000
+G1 X0.000 Y-12.665 Z-3.412 F200.000
+(halfpipe path 15 degrees: ysin/zcos=0.259/0.966  hpcoff_yz= 2.52 9.42  bemx/y/z= 0.00 -13.48 -3.67)
+G1 X0.000 Y-13.477 Z-3.668 F50.000
+G1 X26.000 Y-13.477 Z-3.668 F200.000
+G1 X26.000 Y-18.523 Z-3.668 F200.000
+G1 X0.000 Y-18.523 Z-3.668 F200.000
+G1 X0.000 Y-13.477 Z-3.668 F200.000
+(halfpipe path 10 degrees: ysin/zcos=0.174/0.985  hpcoff_yz= 1.69 9.60  bemx/y/z= 0.00 -14.31 -3.85)
+G1 X0.000 Y-14.307 Z-3.852 F50.000
+G1 X26.000 Y-14.307 Z-3.852 F200.000
+G1 X26.000 Y-17.693 Z-3.852 F200.000
+G1 X0.000 Y-17.693 Z-3.852 F200.000
+G1 X0.000 Y-14.307 Z-3.852 F200.000
+(halfpipe path 05 degrees: ysin/zcos=0.087/0.996  hpcoff_yz= 0.85 9.71  bemx/y/z= 0.00 -15.15 -3.96)
+G1 X0.000 Y-15.150 Z-3.963 F50.000
+G1 X26.000 Y-15.150 Z-3.963 F200.000
+G1 X26.000 Y-16.850 Z-3.963 F200.000
+G1 X0.000 Y-16.850 Z-3.963 F200.000
+G1 X0.000 Y-15.150 Z-3.963 F200.000
+(halfpipe path 00 degrees: ysin/zcos=0.000/1.000  hpcoff_yz= 0.00 9.75  bemx/y/z= 0.00 -16.00 -4.00)
+G1 X0.000 Y-16.000 Z-4.000 F50.000
+G1 X26.000 Y-16.000 Z-4.000 F200.000
+G1 X26.000 Y-16.000 Z-4.000 F200.000
+G1 X0.000 Y-16.000 Z-4.000 F200.000
+G1 X0.000 Y-16.000 Z-4.000 F200.000
+G0 Z10.000
+(finish operation: Custom)
+(begin postamble)
+M05
+G17 G54 G90 G80 G40
+M2
