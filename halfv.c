@@ -3,7 +3,7 @@
 ///
 ///
 ///
-///   how to build:   gcc halfpipe_vertical.c -lm -o halfv
+///   how to build:   gcc halfv.c -lm -o halfv
 ///
 ///   generate G-code to cut a part of a VERTICAL halfpipe with an endmill
 ///    Note: as of now this only creates the paths for the  halfpipe outline
@@ -14,7 +14,7 @@
 ///             -----
 
 
-#define VERSION "102"
+#define VERSION "103"
 
 
 #include <stdio.h>
@@ -43,7 +43,7 @@ double zcutHalfpipe   =  8.00;       //  4.00 mm   depth of halfpipe   (start of
 //int zCenter        = 0000;       //  0.00 mm   y offset to center of halfpipe    !! not needed as long at start cuts is 0mm depth
 
 double hpCenter_x     =   0.00;       //   0.00 mm   x offset to center of halfpipe
-double hpCenter_y     = -20.00;     // -20.00 mm   y offset to center of halfpipe
+double hpCenter_y     =   0.00;     // -20.00 mm   y offset to center of halfpipe
 double hpCenter_z     =  12.00;      // -12.00 mm = 32-4 =  z axis center = hpD - cutdepth    !! calculated on the fly 
 
 double speedHorizontal = 250.0;
